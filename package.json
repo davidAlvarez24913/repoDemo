@@ -1,0 +1,16 @@
+{
+  "name": "reservas",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "workspaces":["app","db"],
+  "private":"true",
+  "scripts": {
+    "start-db": " yarn workspace db dev",
+    "start-app": " yarn workspace app start",
+    "build-app": " yarn workspace app react-scripts build",
+    "test-app": " yarn workspace app react-scripts test --transformIgnorePatterns 'node_modules/(?!(@ionic/react|@ionic/react-router|@ionic/core|@stencil/core|ionicons)/)'",
+    "eject-app": " yarn workspace app react-scripts eject",
+    "lint-app": " yarn workspace app eslint --ext .ts,.tsx src"
+  }
+}
